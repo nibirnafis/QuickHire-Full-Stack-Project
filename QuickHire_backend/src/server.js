@@ -1,5 +1,4 @@
 require('dotenv').config();
-import cors from "cors"
 const express = require('express');
 const connectDB = require('./config/db');
 
@@ -9,11 +8,11 @@ const app = express();
 connectDB();
 
 
-app.use(cors({
+/* app.use(cors({
     origin: "https://quickhire-full-stack-project.onrender.com",
     credentials: true
 }
-))
+)) */
 
 // 2. Middleware
 app.use(express.json());
