@@ -1,4 +1,5 @@
 require('dotenv').config();
+import cors from "cors"
 const express = require('express');
 const connectDB = require('./config/db');
 
@@ -6,6 +7,13 @@ const app = express();
 
 // 1. Connect to Database
 connectDB();
+
+
+app.use(cors({
+    origin: "https://quickhire-full-stack-project.onrender.com",
+    credentials: true
+}
+))
 
 // 2. Middleware
 app.use(express.json());
@@ -17,7 +25,7 @@ app.get('/', (req, res) => {
 
 
 app.post('/api/jobs', (req, res) => {
-    console.log(req.body)
+    console.log("Hi")
 })
 
 
