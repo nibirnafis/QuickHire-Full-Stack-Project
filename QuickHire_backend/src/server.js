@@ -1,33 +1,23 @@
-require('dotenv').config();
-const express = require('express');
-const connectDB = require('./config/db');
+import express, { Router } from 'express'
+import dotenv from 'dotenv';
+dotenv.config()
+import { connectDB } from "./config/db.js"
+import { routes } from './routes/index.js';
 
-const app = express(); 
+export const app = express();
 
-// 1. Connect to Database
 connectDB();
 
 
-/* app.use(cors({
-    origin: "https://quickhire-full-stack-project.onrender.com",
-    credentials: true
-}
-)) */
-
-// 2. Middleware
 app.use(express.json());
 
+app.use('/', routes)
 
 app.get('/', (req, res) => {
-  res.send('Express is running!');
-});
-
-
-app.post('/api/jobs', (req, res) => {
-    console.log("Hi")
+    res.send("Welcome To Quick Hire Backend")
 })
 
 
-// 3. Start Server
+
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));

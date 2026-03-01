@@ -1,9 +1,6 @@
-const express = require('express');
+/* const express = require('express');
 const app = express();
-// const connectDB = require('./config/db');
 
-
-// connectDB();
 
 app.get('/', (req, res) => {
   res.send('Express is running!');
@@ -12,3 +9,4 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('Server started on http://localhost:3000');
 });
+ */
