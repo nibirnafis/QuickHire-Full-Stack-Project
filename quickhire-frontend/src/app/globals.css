@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "clashDisplay";
+  src: url("/fonts/clash_display/ClashDisplay-Semibold.otf") format("truetype");
+}
+
+
+@font-face {
+  font-family: "Epilogue";
+  src: url("https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap") format("truetype");
+}
+
+
+ @layer components {
+    .responsive{
+      @apply px-4 lg:px-0
+    }
+
+ }
+
+
+
+ @theme{
+    --color-primary-1 : #4640DE;
+    --color-primary-2 : #26A4FF;
+    --color-primary-3 : #F8F8FD;
+
+    --color-txt-1 : #25324B;
+    --color-txt-2 : #7C8493;
+
+    --font-clashDisplay: "clashDisplay";
+    --font-Epilogue: "Epilogue", sans-serif;
+
+
+    --clip-beveled-rb: polygon(0% 0, 100% 0, 100% 75%, 75% 100%, 0 100%);
+    --clip-beveled-lt: polygon(15% 0, 100% 0, 100% 100%, 0% 100%, 0 15%);
+    --clip-beveled-ltrb: polygon(15% 0, 100% 0, 100% 75%, 85% 100%, 0 100%, 0% 25%)
+ }
+
+
+ @layer utilities{
+  .beveled-rb{
+    clip-path: var(--clip-beveled-rb);
+  }
+  
+  .beveled-lt{
+    clip-path: var(--clip-beveled-lt);
+  }
+  
+  .beveled-ltrb{
+    clip-path: var(--clip-beveled-ltrb);
+  }
+ }

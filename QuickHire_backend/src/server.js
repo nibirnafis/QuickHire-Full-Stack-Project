@@ -1,5 +1,6 @@
 import express, { Router } from 'express'
 import dotenv from 'dotenv';
+import cors from 'cors'
 dotenv.config()
 import { connectDB } from "./config/db.js"
 import { routes } from './routes/index.js';
@@ -7,6 +8,12 @@ import { routes } from './routes/index.js';
 export const app = express();
 
 connectDB();
+
+
+app.use(cors({
+  origin: 'http://localhost:3000',
+  credentials: true,
+}))
 
 
 app.use(express.json());

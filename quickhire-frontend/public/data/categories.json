@@ -1,0 +1,42 @@
+[
+    {
+        "icon_url": "/assets/icons/1.png",
+        "title": "Design",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/2.png",
+        "title": "Sales",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/3.png",
+        "title": "Marketing",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/4.png",
+        "title": "Finance",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/5.png",
+        "title": "Technology",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/6.png",
+        "title": "Engineering",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/7.png",
+        "title": "Business",
+        "available": 50
+    },
+    {
+        "icon_url": "/assets/icons/8.png",
+        "title": "Human Resource",
+        "available": 50
+    }
+]

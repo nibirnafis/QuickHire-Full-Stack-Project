@@ -1,0 +1,246 @@
+[
+  {
+    "title": "Frontend Developer",
+    "company": "TechNova Ltd.",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Technology", "Design"],
+    "description": "Develop and maintain responsive web applications using React and modern JavaScript.",
+    "createdAt": "2026-03-01T17:41:31.069+00:00"
+  },
+  {
+    "title": "Digital Marketing Strategist",
+    "company": "Bright Ads Co.",
+    "location": "Chattogram, Bangladesh",
+    "category": ["Marketing", "Business"],
+    "description": "Plan and execute digital campaigns to increase brand visibility.",
+    "createdAt": "2026-03-02T09:15:22.112+00:00"
+  },
+  {
+    "title": "UI/UX Designer",
+    "company": "PixelCraft",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Design", "Technology"],
+    "description": "Design intuitive user interfaces and improve overall user experience.",
+    "createdAt": "2026-03-02T12:30:10.453+00:00"
+  },
+  {
+    "title": "Business Analyst",
+    "company": "Strategix Ltd.",
+    "location": "Khulna, Bangladesh",
+    "category": ["Business", "Technology"],
+    "description": "Analyze business requirements and propose scalable solutions.",
+    "createdAt": "2026-03-03T08:05:44.220+00:00"
+  },
+  {
+    "title": "Brand Manager",
+    "company": "BrandBoost",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Marketing", "Business"],
+    "description": "Develop brand positioning and oversee promotional strategies.",
+    "createdAt": "2026-03-03T15:10:55.890+00:00"
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "CodeSphere",
+    "location": "Sylhet, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Build scalable backend systems and dynamic frontend interfaces.",
+    "createdAt": "2026-03-04T10:45:12.345+00:00"
+  },
+  {
+    "title": "Content Marketing Executive",
+    "company": "WriteWave",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Marketing", "Business"],
+    "description": "Create content strategies and manage blog and social media presence.",
+    "createdAt": "2026-03-04T18:20:09.111+00:00"
+  },
+  {
+    "title": "Product Designer",
+    "company": "Creative Studio",
+    "location": "Rajshahi, Bangladesh",
+    "category": ["Design", "Technology"],
+    "description": "Design digital products focusing on usability and aesthetics.",
+    "createdAt": "2026-03-05T07:30:14.777+00:00"
+  },
+  {
+    "title": "Startup Growth Manager",
+    "company": "LaunchPad",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Business", "Marketing"],
+    "description": "Drive company growth through partnerships and market analysis.",
+    "createdAt": "2026-03-05T09:11:33.654+00:00"
+  },
+  {
+    "title": "Mobile App Developer",
+    "company": "AppWorks",
+    "location": "Chattogram, Bangladesh",
+    "category": ["Technology", "Design"],
+    "description": "Develop and maintain cross-platform mobile applications.",
+    "createdAt": "2026-03-05T11:22:18.903+00:00"
+  },
+
+  {
+    "title": "SEO Specialist",
+    "company": "Digital Buzz",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Marketing", "Technology"],
+    "description": "Optimize websites to improve search engine rankings.",
+    "createdAt": "2026-03-06T08:40:21.999+00:00"
+  },
+  {
+    "title": "Tech Project Manager",
+    "company": "CloudCore",
+    "location": "Khulna, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Lead development teams and manage project timelines.",
+    "createdAt": "2026-03-06T14:05:17.452+00:00"
+  },
+  {
+    "title": "Creative Director",
+    "company": "Visionary Labs",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Design", "Marketing", "Business"],
+    "description": "Oversee creative projects and align them with brand strategy.",
+    "createdAt": "2026-03-07T10:10:10.010+00:00"
+  },
+  {
+    "title": "E-commerce Manager",
+    "company": "ShopEase",
+    "location": "Sylhet, Bangladesh",
+    "category": ["Business", "Marketing", "Technology"],
+    "description": "Manage online sales platforms and optimize product listings.",
+    "createdAt": "2026-03-07T16:22:44.201+00:00"
+  },
+  {
+    "title": "Data Scientist",
+    "company": "Insight Analytics",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Analyze large datasets to uncover business insights.",
+    "createdAt": "2026-03-08T09:45:55.876+00:00"
+  },
+
+  {
+    "title": "Social Media Designer",
+    "company": "MediaHouse",
+    "location": "Chattogram, Bangladesh",
+    "category": ["Design", "Marketing"],
+    "description": "Design engaging visual content for social media platforms.",
+    "createdAt": "2026-03-08T13:20:30.333+00:00"
+  },
+  {
+    "title": "Technology Consultant",
+    "company": "FutureTech",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Advise companies on digital transformation strategies.",
+    "createdAt": "2026-03-09T07:55:12.000+00:00"
+  },
+  {
+    "title": "Advertising Executive",
+    "company": "AdVision",
+    "location": "Khulna, Bangladesh",
+    "category": ["Marketing", "Business"],
+    "description": "Develop advertising campaigns and manage client accounts.",
+    "createdAt": "2026-03-09T12:44:41.321+00:00"
+  },
+  {
+    "title": "UX Researcher",
+    "company": "UserFirst",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Design", "Technology"],
+    "description": "Conduct user research to improve product usability.",
+    "createdAt": "2026-03-10T08:15:29.654+00:00"
+  },
+  {
+    "title": "IT Business Consultant",
+    "company": "TechBridge",
+    "location": "Rajshahi, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Bridge the gap between business needs and technical solutions.",
+    "createdAt": "2026-03-10T14:33:55.100+00:00"
+  },
+
+  {
+    "title": "Marketing Analyst",
+    "company": "MarketScope",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Marketing", "Business"],
+    "description": "Analyze market trends and customer behavior.",
+    "createdAt": "2026-03-11T09:11:11.111+00:00"
+  },
+  {
+    "title": "Web Designer",
+    "company": "Creative Web",
+    "location": "Sylhet, Bangladesh",
+    "category": ["Design", "Technology"],
+    "description": "Design modern and responsive websites.",
+    "createdAt": "2026-03-11T17:05:42.567+00:00"
+  },
+  {
+    "title": "Product Manager",
+    "company": "InnovateX",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Business", "Technology"],
+    "description": "Define product roadmap and collaborate with development teams.",
+    "createdAt": "2026-03-12T10:20:30.789+00:00"
+  },
+  {
+    "title": "Growth Hacker",
+    "company": "ScaleUp",
+    "location": "Chattogram, Bangladesh",
+    "category": ["Marketing", "Technology"],
+    "description": "Experiment with strategies to drive rapid company growth.",
+    "createdAt": "2026-03-12T15:45:12.222+00:00"
+  },
+  {
+    "title": "Visual Branding Specialist",
+    "company": "BrandHive",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Design", "Marketing"],
+    "description": "Create cohesive brand visuals across platforms.",
+    "createdAt": "2026-03-13T08:30:55.444+00:00"
+  },
+
+  {
+    "title": "Tech Support Lead",
+    "company": "HelpDesk Pro",
+    "location": "Khulna, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Manage support teams and ensure high service quality.",
+    "createdAt": "2026-03-13T13:22:33.555+00:00"
+  },
+  {
+    "title": "Performance Marketing Manager",
+    "company": "AdMax",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Marketing", "Business"],
+    "description": "Manage paid advertising campaigns for ROI optimization.",
+    "createdAt": "2026-03-14T09:44:21.666+00:00"
+  },
+  {
+    "title": "Cloud Engineer",
+    "company": "SkyNet Solutions",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Technology", "Business"],
+    "description": "Design and maintain cloud-based infrastructure.",
+    "createdAt": "2026-03-14T16:10:45.777+00:00"
+  },
+  {
+    "title": "Interaction Designer",
+    "company": "UXFlow",
+    "location": "Chattogram, Bangladesh",
+    "category": ["Design", "Technology"],
+    "description": "Design interactive elements for web and mobile apps.",
+    "createdAt": "2026-03-15T07:55:18.888+00:00"
+  },
+  {
+    "title": "Business Development Executive",
+    "company": "GrowthEdge",
+    "location": "Dhaka, Bangladesh",
+    "category": ["Business", "Marketing"],
+    "description": "Identify new business opportunities and partnerships.",
+    "createdAt": "2026-03-15T12:40:59.999+00:00"
+  }
+]
