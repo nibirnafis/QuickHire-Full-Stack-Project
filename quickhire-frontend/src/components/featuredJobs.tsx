@@ -1,16 +1,28 @@
+'use client'
+
+import { useEffect, useState } from 'react';
+import { IFeaturedJob } from '../types/types';
 import FeaturedJob from './featuredJob';
 import SectionTitle from './sectionTitle';
 
-const FeaturedJobs = async() => {
+const FeaturedJobs = () => {
     
-    const loadData = async () => {
-      const res =  await fetch('http://localhost:3000/data/featuredJobs.json', {next: { revalidate: 3600 }})
-      const data =  await res.json()
 
-      return data
-  }
+    const [ jobs, setJobs ] = useState([])
 
-  const jobs = await loadData()
+
+    useEffect(()=>{
+
+        const loadData = async () => {
+            const res =  await fetch('/data/featuredJobs.json', {next: { revalidate: 3600 }})
+            const data =  await res.json()
+
+            setJobs(data)
+        }
+
+        loadData()
+
+    }, [])
 
 
     return (
@@ -27,7 +39,7 @@ const FeaturedJobs = async() => {
                     jobs.length>0 ?
                     <div className="overflow-x-auto md:overflow-visible flex md:grid grid-cols-4 gap-8">
                         {
-                            jobs.map((job, key: number)=> <FeaturedJob job={job} key={key}></FeaturedJob>)
+                            jobs.map((job: IFeaturedJob, key: number)=> <FeaturedJob job={job} key={key}></FeaturedJob>)
                         }
                     </div>
                     :

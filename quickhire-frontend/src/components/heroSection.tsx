@@ -4,13 +4,13 @@ import SearchBar from './searchBar';
 const HeroSection = () => {
     return (
 
-   <section className='bg-primary-3  beveled-rb'>
+   <section className='bg-primary-3 beveled-rb'>
 
         <div className='flex justify-center items-center min-h-screen md:min-h-auto relative'>
 
             <div className='flex justify-between items-center max-w-298 absolute responsive'>
                 <div className='flex flex-col gap-6'>
-                    <p className='font-clashDisplay font-semibold text-txt-1 text-[3rem] md:text-[4.5rem] leading-12 md:leading-18'>Discover<br />more than<br /><span className='text-primary-2'>5000+ Jobs</span></p>
+                    <p className='font-clashDisplay text-txt-1 text-[3rem] md:text-[4.5rem] leading-12 md:leading-18'>Discover<br />more than<br /><span className='text-primary-2'>5000+ Jobs</span></p>
                     <Image 
                         src='/assets/penline.png'
                         width={455}

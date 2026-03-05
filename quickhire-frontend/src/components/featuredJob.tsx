@@ -1,8 +1,9 @@
 import React from 'react';
+import { IFeaturedJob } from '../types/types';
 
-const FeaturedJob = ({job}) => {
+const FeaturedJob = ({job}: {job: IFeaturedJob}) => {
 
-    const tagColor = (tag) => {
+    const tagColor = (tag: string) => {
         if(tag === "Marketing"){
             return 'text-[#FFB836] bg-[#FFB836]/20 '
         }else if(tag === "Design"){
@@ -30,7 +31,7 @@ const FeaturedJob = ({job}) => {
             <p className='font-normal'>{job.detail}</p>
             <div className='flex gap-2'>
             {
-                job.tags.map((tag, key)=> <p key={key} className={`${tagColor(tag)} py-2 px-4 rounded-full font-semibold`}>{tag}</p>)
+                job.tags.map((tag: string, key: number)=> <p key={key} className={`${tagColor(tag)} py-2 px-4 rounded-full font-semibold`}>{tag}</p>)
             }
             </div>
         </div>

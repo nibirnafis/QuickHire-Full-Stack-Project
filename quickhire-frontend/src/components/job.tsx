@@ -1,14 +1,19 @@
+import Link from 'next/link';
 import React from 'react';
+import { IJob } from '../types/types';
 
-const Job = ({job}) => {
-    const tagColor = (tag) => {
-        if(tag === "Marketing"){
+const Job = ({job}: {job: IJob}) => {
+
+
+
+    const categoryColor = (category: string) => {
+        if(category === "Marketing"){
             return 'text-[#FFB836] bg-[#FFB836]/20 '
-        }else if(tag === "Design"){
+        }else if(category === "Design"){
             return 'text-[#56CDAD] bg-[#56CDAD]/20 '
-        }else if(tag === "Business"){
+        }else if(category === "Business"){
             return 'text-[#4640DE] bg-[#4640DE]/20 '
-        }else if(tag === "Technology"){
+        }else if(category === "Technology"){
             return 'text-[#FF6550] bg-[#FF6550]/20'
         }
     }
@@ -22,13 +27,13 @@ const Job = ({job}) => {
             </div>
             
             <p className='font-normal'>{job.description}</p>
-            <p className='font-normal'>{job.created_at}</p>
-            <div className='flex gap-2'>
-            {
-                job.category.map((tag, key: number)=> <p key={key} className={`${tagColor(tag)} py-2 px-4 rounded-full font-semibold`}>{tag}</p>)
-            }
+            <p className='font-normal'>{job.createdAt}</p>
+            <div className='flex justify-between items-center'>
+                <p className={`${categoryColor(job.category)} py-2 px-4 rounded-full font-semibold`}>{job.category}</p>
+                <Link href={`/jobs/${job._id}`}>View Detail</Link>
             </div>
-        </div>
+            
+        </div>  
     );
 };
 

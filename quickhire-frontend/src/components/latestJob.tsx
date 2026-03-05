@@ -1,6 +1,7 @@
 import React from 'react';
+import { IFeaturedJob } from '../types/types';
 
-const LatestJob = ({job}) => {
+const LatestJob = ({job}: {job: IFeaturedJob}) => {
     return (
         <div className='flex gap-8 p-8 bg-white'>
 

@@ -1,17 +1,24 @@
+ 'use client'
 
+import { useEffect, useState } from "react";
+import { ICategory } from "../types/types";
 import Category from "./category";
 import SectionTitle from "./sectionTitle";
 
-async function Categories(){
+function Categories(){
 
-    const loadData = async () => {
-      const res =  await fetch('http://localhost:3000/data/categories.json', {next: { revalidate: 3600 }})
-      const data =  await res.json()
-
-      return data
-  }
-
-  const categories = await loadData()
+    const [ categories, setCategories ] = useState([])
+    
+        useEffect(()=>{
+            const loadData = async () => {
+                const res = await  fetch('/data/categories.json')
+                const data = await res.json()
+    
+                setCategories(data)
+            }
+            
+            loadData()
+        }, [])
 
 
     return (
@@ -28,7 +35,7 @@ async function Categories(){
                     categories.length>0 ?
                     <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
                         {
-                        categories.map((category, key: number)=> <Category category={category} key={key}></Category>)
+                        categories.map((category: ICategory, key: number)=> <Category category={category} key={key}></Category>)
                         }
                     </div>
                     :

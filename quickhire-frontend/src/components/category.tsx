@@ -1,6 +1,7 @@
 import React from 'react';
+import { ICategory } from '../types/types';
 
-const Category = ({category}) => {
+const Category = ({category}:{category: ICategory}) => {
     return (
         <div className='flex flex-row md:flex-col p-8 gap-8 border-[#D6DDEB] border-[.5px]'>
             <div>

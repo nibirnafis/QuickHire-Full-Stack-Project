@@ -1,16 +1,24 @@
+'use client'
+
+import { useEffect, useState } from 'react';
+import { IFeaturedJob } from '../types/types';
 import LatestJob from './latestJob';
 import SectionTitle from './sectionTitle';
 
-const LatestJobs = async() => {
-    const loadData = async () => {
-      const res =  await fetch('http://localhost:3000/data/latestJobs.json', {next: { revalidate: 3600 }})
-      const data =  await res.json()
+const LatestJobs = () => {
 
-      return data
-  }
+    const [ jobs, setJobs ] = useState([])
 
-  const jobs = await loadData()
+    useEffect(()=>{
+        const loadData = async () => {
+            const res = await  fetch('/data/latestJobs.json')
+            const data = await res.json()
 
+            setJobs(data)
+        }
+        
+        loadData()
+    }, [])
 
     return (
         <>
@@ -26,7 +34,7 @@ const LatestJobs = async() => {
                     jobs.length>0 ?
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
                         {
-                            jobs.map((job, key: number)=> <LatestJob job={job} key={key}></LatestJob>)
+                            jobs.map((job: IFeaturedJob, key: number)=> <LatestJob job={job} key={key}></LatestJob>)
                         }
                     </div>
                     :
