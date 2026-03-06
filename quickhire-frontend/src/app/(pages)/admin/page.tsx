@@ -1,8 +1,10 @@
 import AddJob from "@/src/components/admin/addJob";
+import FindJob from "@/src/components/admin/findJob";
 import SectionTitle from "@/src/components/sectionTitle";
 
 export default function Admin() {
   return (
+    
     <>
     
     <section className='container'>
@@ -10,11 +12,9 @@ export default function Admin() {
 
             <SectionTitle t1='Admin ' t2='Pannel'></SectionTitle>
 
-            <div>
-              <div className="">
-                  <p>Add New Job</p>
-                  <AddJob></AddJob>
-              </div>
+            <div className="flex flex-col md:flex-row md:justify-around w-full border-primary-1 border">
+                <AddJob></AddJob>
+                <FindJob></FindJob>
             </div>
         </div>
     </section>

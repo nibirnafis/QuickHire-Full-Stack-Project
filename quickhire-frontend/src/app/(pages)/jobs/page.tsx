@@ -8,7 +8,6 @@ export default async function Jobs() {
 
   const loadJobs = async () => {
       const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs`, {next: { revalidate: 3600 }})
-      // const res =  await fetch(`${process.env.NEXT_PUBLIC_BASE_URL}/data/jobs.json`, {next: { revalidate: 3600 }})
       const data =  await res.json()
 
       return data.res

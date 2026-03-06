@@ -21,7 +21,7 @@ const Navbar = () => {
                     </Link>
                     <div className='hidden md:flex gap-4'>
                         <Link className='text-txt-2 font-normal' href={`/jobs`}>Jobs</Link>
-                        <Link className='text-txt-2 font-normal' href={`/admin`}>Admin Pannel</Link>
+                        <Link className='text-txt-2 font-normal' href={`/admin`}>Admin</Link>
                     </div>
                 </div>
 

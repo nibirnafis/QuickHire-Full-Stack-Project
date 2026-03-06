@@ -1,13 +1,11 @@
 'use client'
 
 import { applyJob } from '@/src/utilities/utils';
-import { useParams } from 'next/navigation';
 
 
-const ApplyForm = () => {
+const ApplyForm = ({id}:{id: string}) => {
 
-    const { id } = useParams()
-
+    
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
             e.preventDefault()
     
@@ -24,8 +22,8 @@ const ApplyForm = () => {
     
     
         return (
-            <div className='flex flex-col justify-center items-center max-w-298 m-auto bg-primary-2 responsive'>
-                <form onSubmit={handleSubmit} className='flex flex-col bg-white p-4 gap-6'>
+            <div className='p-4'>
+                <form onSubmit={handleSubmit} className='flex flex-col gap-2'>
                     <input type="text" name='name' placeholder='Type Your Name'/>
                     <input type="text" name='email' placeholder='Type Your Email'/>
                     <input type="text" name='resume_link' placeholder='Resume Link'/>

@@ -1,29 +1,19 @@
 import Link from 'next/link';
-import React from 'react';
 import { IJob } from '../types/types';
+import { categoryColor } from '../utilities/utils';
 
 const Job = ({job}: {job: IJob}) => {
 
 
 
-    const categoryColor = (category: string) => {
-        if(category === "Marketing"){
-            return 'text-[#FFB836] bg-[#FFB836]/20 '
-        }else if(category === "Design"){
-            return 'text-[#56CDAD] bg-[#56CDAD]/20 '
-        }else if(category === "Business"){
-            return 'text-[#4640DE] bg-[#4640DE]/20 '
-        }else if(category === "Technology"){
-            return 'text-[#FF6550] bg-[#FF6550]/20'
-        }
-    }
-
     return (
+        
         <div className='flex flex-col gap-2 p-6 border-[#D6DDEB] border-[.5px] min-w-[320px] md:min-w-auto'>
 
             <div>
                 <p className='font-semibold text-[18px] text-txt-1'>{job.title}</p>
                 <p className='font-normal text-[1rem] text-txt-1'>{job.company} <span>{job.location}</span></p>
+                <p className='font-light text-sm text-txt-2'>Job ID: {job._id}</p>
             </div>
             
             <p className='font-normal'>{job.description}</p>

@@ -19,7 +19,7 @@
     }
 
     .container{
-      @apply my-18
+      @apply my-12 md:my-18
     }
  }
 

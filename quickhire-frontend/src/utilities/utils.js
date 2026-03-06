@@ -49,14 +49,11 @@ export async function applyJob(appliedJob){
 
 
 
-export async function DeleteJob(appliedJob){
+
+export async function deleteJob(id){
     try {
-        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/`, {
-            method: 'DELETE',
-            headers: {
-            'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(appliedJob) 
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/${id}`, {
+            method: 'DELETE'
         });
 
         if (!response.ok) {
@@ -68,5 +65,25 @@ export async function DeleteJob(appliedJob){
 
     } catch (error) {
         console.log(error)
+    }
+}
+
+
+
+
+
+
+
+
+
+export const categoryColor = (category) => {
+    if(category === "Marketing"){
+        return 'text-[#FFB836] bg-[#FFB836]/20 '
+    }else if(category === "Design"){
+        return 'text-[#56CDAD] bg-[#56CDAD]/20 '
+    }else if(category === "Business"){
+        return 'text-[#4640DE] bg-[#4640DE]/20 '
+    }else if(category === "Technology"){
+        return 'text-[#FF6550] bg-[#FF6550]/20'
     }
 }
