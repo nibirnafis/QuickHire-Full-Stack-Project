@@ -74,6 +74,31 @@ export async function deleteJob(id){
 
 
 
+export async function searchJob(job){
+    try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/search`, {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(job) 
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        console.log("Success:", result);
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
+
+
 
 
 export const categoryColor = (category) => {

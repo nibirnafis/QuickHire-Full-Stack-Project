@@ -31,6 +31,23 @@ export const getSingleJob = async(req, res) => {
 
 
 
+export const searchJob = async(req, res) => {
+
+    const job = req.body
+    
+    const result = await Job.find({title: job.title, location: job.location})
+    
+
+    res.status(201).json({
+        message: "Job received successfully!",
+        res: result
+    });
+}
+
+
+
+
+
 export const createJob = async(req, res) => {
     
     const result = await Job.create(req.body)
