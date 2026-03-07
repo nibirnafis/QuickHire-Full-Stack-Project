@@ -2,11 +2,15 @@
 import React from 'react';
 import Button from './ui/button';
 import { searchJob } from '../utilities/utils';
+import { useRouter } from 'next/navigation';
 
 
 
 const SearchBar = () => {
-    
+
+
+    const router = useRouter()
+
 
     const handleSearch = (e: React.FormEvent<HTMLFormElement>) => {
 
@@ -19,6 +23,9 @@ const SearchBar = () => {
         const job =  {title: title, location: location}
 
         const result =  searchJob(job)
+
+        // router.push(`/jobs/${}`)
+        console.log(result)
     }
 
 

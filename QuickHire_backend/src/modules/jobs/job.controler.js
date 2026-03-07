@@ -35,11 +35,17 @@ export const searchJob = async(req, res) => {
 
     const job = req.body
     
-    const result = await Job.find({title: job.title, location: job.location})
+    const result = await Job.aggregate([
+            {
+                $match: {
+                    title: job.title,
+                    location: job.location
+                }
+            }
+        ])
     
-
     res.status(201).json({
-        message: "Job received successfully!",
+        message: "Searched Job received successfully!",
         res: result
     });
 }
