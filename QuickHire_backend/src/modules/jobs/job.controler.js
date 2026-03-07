@@ -33,13 +33,15 @@ export const getSingleJob = async(req, res) => {
 
 export const searchJob = async(req, res) => {
 
-    const job = req.body
+    const title = req.params.title
+    const location = req.params.location
+
     
     const result = await Job.aggregate([
             {
                 $match: {
-                    title: job.title,
-                    location: job.location
+                    title: title,
+                    location: location
                 }
             }
         ])

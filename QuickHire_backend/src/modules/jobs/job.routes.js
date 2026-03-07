@@ -7,5 +7,5 @@ export const jobsRoutes = Router()
 jobsRoutes.get('/', getAllJobs);
 jobsRoutes.get('/:id', getSingleJob);
 jobsRoutes.post('/', createJob);
-jobsRoutes.post('/search', searchJob);
+jobsRoutes.get('/search/:title/:location', searchJob);
 jobsRoutes.delete('/:id', deleteJob);
