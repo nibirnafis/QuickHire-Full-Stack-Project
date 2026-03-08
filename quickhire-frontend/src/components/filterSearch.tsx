@@ -16,15 +16,17 @@ const FilterSearch = () => {
 
         if(category==="All"){
             router.push(`/jobs`)
+        }else{
+            router.push(`/jobs/category/${category}`)
         }
 
-        router.push(`/jobs/category/${category}`)
+        
     }
 
 
     return (
         <div className="max-w-298 m-auto responsive">
-            <form onSubmit={handleSubmit} className='flex justify-between items-center w-ful  gap-6'>
+            <form onSubmit={handleSubmit} className='flex justify-between items-center w-full  gap-6'>
                 <select name="category">
                     <option value="All">All</option>
                     <option value="Marketing">Marketing</option>

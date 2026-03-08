@@ -8,9 +8,10 @@ import { IJob } from "@/src/types/types";
 const categorizedJobs = async({params}:{params: Promise<{ category: string }> }) => {
 
     const { category } = await params
+    console.log(category)
     
     const loadJobs = async () => {
-      const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/${category}`, { cache: 'no-store' })
+      const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/category/${category}`, { cache: 'no-store' })
       const data =  await res.json()
 
       return data.res
