@@ -13,7 +13,6 @@ export async function addNewJob(newJob){
         }
         
         const result = await response.json();
-        // console.log("Success:", result);
         return result
 
     } catch (error) {

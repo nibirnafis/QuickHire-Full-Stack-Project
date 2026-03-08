@@ -25,6 +25,7 @@ const AddJob = () => {
 
         if(result.success){
             toast.success('Job Created Successfully', { position: 'top-right' });
+            router.refresh()
             router.push('/jobs')
         }
     }
