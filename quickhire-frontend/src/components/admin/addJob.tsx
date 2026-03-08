@@ -22,9 +22,9 @@ const AddJob = () => {
 
 
     return (
-        <div>
-            <p className="font-clashDisplay text-center text-2xl">Create Job</p>
-            <form onSubmit={handleSubmit} className='flex flex-col bg-white p-4 gap-4'>
+        <div className="border-primary-1 border p-4 w-full">
+            <p className="font-clashDisplay text-center text-2xl mb-4">Create Job</p>
+            <form onSubmit={handleSubmit} className='flex flex-col bg-white gap-4'>
                 <input type="text" name='title' placeholder='Add Job Title'/>
                 <input type="text" name='company' placeholder='Add Company'/>
                 <input type="text" name='location' placeholder='Location'/>

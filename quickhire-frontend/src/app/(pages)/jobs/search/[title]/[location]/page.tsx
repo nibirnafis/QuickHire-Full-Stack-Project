@@ -3,11 +3,14 @@ import SectionTitle from "@/src/components/sectionTitle"
 import { IJob } from "@/src/types/types"
 
 
-export default async function Jobs() {
+export default async function Jobs({params} :{params: Promise<{ title: string, location: string}>}) {
 
+  const { title, location } = await params
+  console.log(title, location)
 
   const loadJobs = async () => {
-      const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs`, {next: { revalidate: 3600 }})
+
+      const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/search/${title}/${location}`, {next: { revalidate: 3600 }})
       const data =  await res.json()
 
       return data.res

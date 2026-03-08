@@ -18,6 +18,8 @@ const ApplyForm = ({id}:{id: string}) => {
             const newJob =  {job_id: id, name: name, email: email, resume_link: resume_link, cover_note: cover_note}
     
             const result =  applyJob(newJob)
+// toast.success('Success message!', { position: 'top-right' });
+
         }
     
     

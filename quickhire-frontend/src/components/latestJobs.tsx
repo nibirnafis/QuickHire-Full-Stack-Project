@@ -24,7 +24,7 @@ const LatestJobs = () => {
         <>
         <section className='py-18 bg-primary-3 beveled-lt'>
             <div className='max-w-298 m-auto responsive'>
-                <div className="flex justify-between mb-12">
+                <div className="flex justify-between" >
                     <SectionTitle t1='Latest ' t2='jobs open'></SectionTitle>
                     <button className="hidden md:block">Show all jobs</button>
                 </div>

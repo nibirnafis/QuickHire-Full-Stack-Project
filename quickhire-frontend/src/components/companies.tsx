@@ -2,7 +2,7 @@ import React from 'react';
 
 const Companies = () => {
     return (
-        <section className='my-12'>
+        <section className='my-10  md:my-12'>
             <div className="max-w-298 flex flex-col m-auto responsive">
                 <p className='mb-8'>Companies we helped grow</p>
                 <div className='flex flex-wrap  gap-4 justify-between items-center'>

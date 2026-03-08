@@ -29,7 +29,7 @@ const FeaturedJobs = () => {
         <>
         <section className=''>
             <div className='max-w-298 m-auto responsive'> 
-                <div className="flex justify-between mb-12">
+                <div className="flex justify-between">
                     <SectionTitle t1='Featured ' t2='jobs'></SectionTitle>
                     <button className="hidden md:block">Show all jobs</button>
                 </div>

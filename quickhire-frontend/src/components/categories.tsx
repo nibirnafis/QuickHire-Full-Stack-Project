@@ -25,7 +25,7 @@ function Categories(){
         <>
         <section className="">
             <div className="max-w-298 m-auto responsive">
-                <div className="flex justify-between mb-12">
+                <div className="flex justify-between">
                     <SectionTitle t1='Explore by ' t2='category'></SectionTitle>
                     <button className="hidden md:block">Show all jobs</button>
                 </div>
@@ -33,7 +33,7 @@ function Categories(){
                 {
                     
                     categories.length>0 ?
-                    <div className="grid grid-cols-1 gap-8 md:grid-cols-4">
+                    <div className="grid grid-cols-1 gap-4 md:gap-8 md:grid-cols-4">
                         {
                         categories.map((category: ICategory, key: number)=> <Category category={category} key={key}></Category>)
                         }

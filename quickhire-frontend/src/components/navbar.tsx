@@ -31,7 +31,7 @@ const Navbar = () => {
                     </div>
                     <div className={`${!isDisplayed ? 'hidden' : 'flex'} flex-col justify-center items-center absolute top-8 right-8 bg-primary-1 min-w-50` }>
                         <Link className='text-white py-3 px-6' href={`/jobs`}>Jobs</Link>
-                        <Link className='text-white py-3 px-6' href={`/jobs`}>Admin Pannel</Link>
+                        <Link className='text-white py-3 px-6' href={`/admin`}>Admin</Link>
                         <Button title='Login' bg='bg-none' text='text-primary-3'></Button>
                         <Button title='Sign Up' bg='bg-primary-1' text='text-white'></Button>
                     </div>

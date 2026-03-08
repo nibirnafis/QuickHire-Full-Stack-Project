@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "../components/footer";
 import Navbar from "../components/navbar";
+import { ToastContainer } from "react-toastify";
 
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
 
         <div className="grow">
           {children}
+          <ToastContainer />
         </div>
 
         <Footer></Footer>

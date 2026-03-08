@@ -11,7 +11,7 @@ export default function Admin() {
         <div className='flex flex-col justify-center items-center max-w-298 m-auto responsive'> 
 
             <SectionTitle t1='Admin ' t2='Pannel'></SectionTitle>
-            <div className="flex flex-col md:flex-row md:justify-around w-full border-primary-1 border">
+            <div className="flex flex-col gap-4 md:flex-row md:justify-between w-full">
                 <AddJob></AddJob>
                 <FindJob></FindJob>
             </div>

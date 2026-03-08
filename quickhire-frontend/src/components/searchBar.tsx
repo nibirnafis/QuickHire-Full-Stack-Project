@@ -20,9 +20,6 @@ const SearchBar = () => {
         const title = form.get('title') as string
         const location = form.get('location') as string
 
-        // const job =  {title: title, location: location}
-
-        // const result =  searchJob(job)
 
         router.push(`/jobs/search/${title}/${location}`)
     }
