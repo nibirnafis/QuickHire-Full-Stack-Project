@@ -24,7 +24,7 @@ const JobDetail = async({params}:{params: Promise<{ id: string }> }) => {
 
                 <SectionTitle t1='Job ' t2='Detail'></SectionTitle>
 
-                <div className='flex flex-col gap-2 p-6 border-[#D6DDEB] border-[.5px]'>
+                <div className='flex flex-col gap-2 p-6 border-[#D6DDEB] border-[.5px]  w-full'>
 
                     <div>
                         <p className='font-semibold text-[18px] text-txt-1'>{job.title}</p>

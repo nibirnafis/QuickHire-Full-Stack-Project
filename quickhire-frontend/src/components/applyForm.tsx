@@ -1,12 +1,16 @@
 'use client'
 
 import { applyJob } from '@/src/utilities/utils';
+import { useRouter } from 'next/navigation';
+import { toast } from 'react-toastify';
 
 
 const ApplyForm = ({id}:{id: string}) => {
 
+    const router = useRouter()
+
     
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    const handleSubmit = async(e: React.FormEvent<HTMLFormElement>) => {
             e.preventDefault()
     
             const form = new FormData(e.currentTarget)
@@ -17,8 +21,14 @@ const ApplyForm = ({id}:{id: string}) => {
     
             const newJob =  {job_id: id, name: name, email: email, resume_link: resume_link, cover_note: cover_note}
     
-            const result =  applyJob(newJob)
-// toast.success('Success message!', { position: 'top-right' });
+            const result =  await applyJob(newJob)
+
+            console.log(result)
+
+            if(result.res){
+                toast.success('Job Successfully Added', { position: 'top-right' });
+                router.push('/jobs')
+            }
 
         }
     

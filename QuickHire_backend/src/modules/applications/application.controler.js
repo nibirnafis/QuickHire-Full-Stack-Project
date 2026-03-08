@@ -18,6 +18,7 @@ export const submitApplication = async(req, res) => {
     const result = await Application.create(req.body)
 
     res.status(201).json({
+        success: true,
         message: "Application submitted successfully!",
         res: result
     });

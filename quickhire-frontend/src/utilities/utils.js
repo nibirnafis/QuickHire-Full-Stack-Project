@@ -11,9 +11,10 @@ export async function addNewJob(newJob){
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
-
+        
         const result = await response.json();
-        console.log("Success:", result);
+        // console.log("Success:", result);
+        return result
 
     } catch (error) {
         console.log(error)
@@ -38,7 +39,8 @@ export async function applyJob(appliedJob){
         }
 
         const result = await response.json();
-        console.log("Success:", result);
+        // console.log("Success:", result);
+        return result
 
     } catch (error) {
         console.log(error)
@@ -61,7 +63,8 @@ export async function deleteJob(id){
         }
 
         const result = await response.json();
-        console.log("Success:", result);
+        // console.log("Success:", result);
+        return result
 
     } catch (error) {
         console.log(error)
@@ -89,7 +92,8 @@ export async function searchJob(job){
         }
 
         const result = await response.json();
-        console.log("Success:", result);
+        // console.log("Success:", result);
+        return result
 
     } catch (error) {
         console.log(error)
