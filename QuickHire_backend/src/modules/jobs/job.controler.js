@@ -20,6 +20,27 @@ export const getAllJobs = async(req, res) => {
 
 
 
+export const getCategorizedJobs = async(req, res) => {
+    
+    const category = req.params.category
+    console.log(category)
+
+    try {
+        const result = await Job.find({category: category})
+
+        res.status(201).json({
+            success: true,
+            message: "All Jobs retrived successfully!",
+            res: result
+        });
+    } catch (error) {
+        console.log(error)
+    }
+}
+
+
+
+
 export const getSingleJob = async(req, res) => {
 
     try {

@@ -74,7 +74,7 @@ export async function deleteJob(id){
 
 
 
-
+/* 
 
 export async function searchJob(job){
     try {
@@ -97,8 +97,33 @@ export async function searchJob(job){
     } catch (error) {
         console.log(error)
     }
-}
+} */
 
+
+
+/* export async function searchJobByCategory(category){
+    try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/${category}`, {
+            method: 'GET',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(job) 
+        });
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const result = await response.json();
+        // console.log("Success:", result);
+        return result
+
+    } catch (error) {
+        console.log(error)
+    }
+}
+ */
 
 
 

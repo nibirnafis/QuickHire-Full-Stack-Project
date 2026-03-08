@@ -1,7 +1,6 @@
 'use client'
 import React from 'react';
 import Button from './ui/button';
-import { searchJob } from '../utilities/utils';
 import { useRouter } from 'next/navigation';
 
 

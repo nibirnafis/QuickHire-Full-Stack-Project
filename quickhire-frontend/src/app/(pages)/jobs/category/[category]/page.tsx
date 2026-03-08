@@ -1,13 +1,16 @@
-import Job from "@/src/components/job"
+import Job from "@/src/components/job";
 import SectionTitle from "@/src/components/sectionTitle"
-import { IJob } from "@/src/types/types"
+import { IJob } from "@/src/types/types";
 
 
-export default async function Jobs() {
 
 
-  const loadJobs = async () => {
-      const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs`, { cache: 'no-store' })
+const categorizedJobs = async({params}:{params: Promise<{ category: string }> }) => {
+
+    const { category } = await params
+    
+    const loadJobs = async () => {
+      const res =  await fetch(`${process.env.NEXT_PUBLIC_API_BASE_URL}/jobs/${category}`, { cache: 'no-store' })
       const data =  await res.json()
 
       return data.res
@@ -33,9 +36,7 @@ export default async function Jobs() {
         </div>
     </section>
 
-  );
-}
+  )
+};
 
-
-
-
+export default categorizedJobs;

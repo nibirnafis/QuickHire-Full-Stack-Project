@@ -1,11 +1,12 @@
 import { Router } from "express";
-import { createJob, deleteJob, getAllJobs, getSingleJob, searchJob } from "./job.controler.js"
+import { createJob, deleteJob, getAllJobs, getCategorizedJobs, getSingleJob, searchJob } from "./job.controler.js"
 
 
 export const jobsRoutes = Router()
 
 jobsRoutes.get('/', getAllJobs);
 jobsRoutes.get('/:id', getSingleJob);
+jobsRoutes.get('/category/:category', getCategorizedJobs);
 jobsRoutes.post('/', createJob);
 jobsRoutes.get('/search/:title/:location', searchJob);
 jobsRoutes.delete('/:id', deleteJob);
