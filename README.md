@@ -3,10 +3,7 @@
 QuickHire is a robust, full-stack job marketplace platform designed to bridge the gap between recruiters and job seekers. Built with a focus on speed, scalability, and modern UX, it features a seamless interface for managing job listings and applications.
 
 
-Frontend Live Link: https://digital-wallet-system-frontend-two.vercel.app/
-
-
-Backend Live Link: https://digital-wallet-system-frontend-two.vercel.app/
+Frontend Live Link: https://quick-hire-full-stack-project.vercel.app/
 
 
 ---
