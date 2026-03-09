@@ -50,8 +50,9 @@ cd QuickHire-Full-Stack-Project/QuickHire_backend
 
 Install dependencies:
 
-Bash
-npm install
+Bash ->
+npm install ->
+
 Environment Setup:
 Create a .env file in both the /frontend and /backend directories and add-
 
